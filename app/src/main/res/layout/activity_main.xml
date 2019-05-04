@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/disease_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:prompt="@string/spinner_prompt"
+        />
+
+    <EditText
+        android:id="@+id/disease_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:hint="enter disease name"
+        android:layout_marginLeft="50dp"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/disease_syptoms"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:maxHeight="250dp"
+        android:layout_below="@+id/disease_name"
+        android:layout_centerHorizontal="true"
+        android:hint="enter disease syptoms"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/disease_description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="174dp"
+        android:hint="enter disease description"
+        android:maxHeight="250dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/disease_syptoms"/>
+
+    <EditText
+        android:id="@+id/disease_prevention"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:hint="enter disease prevention"
+        android:maxHeight="250dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/disease_description"
+        />
+
+    <EditText
+        android:id="@+id/disease_cure"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="177dp"
+        android:hint="enter disease cure (optional)"
+        android:maxHeight="250dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/disease_prevention" />
+
+    <ImageView
+        android:id="@+id/viewDisease"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/disease_name"
+        android:src="@drawable/doctor"
+        android:layout_alignLeft="@+id/disease_name" />
+
+    <ImageButton
+        android:id="@+id/disease_img"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/add_disease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/disease_name"
+        android:layout_alignTop="@+id/disease_img"
+        android:text="Add"
+        android:layout_alignRight="@+id/disease_name" />
+
+</RelativeLayout>

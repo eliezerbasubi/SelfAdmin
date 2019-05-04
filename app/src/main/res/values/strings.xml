@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Self Admin</string>
+    <string name="spinner_prompt">Select type</string>
+</resources>
